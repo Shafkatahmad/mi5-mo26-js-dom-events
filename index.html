@@ -6,9 +6,26 @@
     <title>JS DOM EVENTS</title>
   </head>
   <body>
+    <!-- option 1: add onclick event in onclick handler -->
     <h1 onclick="console.log('I am clicked')">DOM er ajke special events</h1>
     <button onclick="console.log(7)">Click Me</button>
     <button onclick="console.log(65)">Another Button</button>
+    <br />
+    <button onclick="document.body.style.backgroundColor = 'yellow'">
+      Make Yellow
+    </button>
+    <!-- option 2 -->
+    <button onclick="makeRed()">Make Red</button>
+    <!-- option 3 -->
+    <button id="make-blue">Make Blue</button>
+    <button id="make-purple">Make Purple</button>
+
     <script src="./js/events.js"></script>
+    <script>
+      // option 2: add onclick function
+      // function makeRed() {
+      //   document.body.style.backgroundColor = "red";
+      // }
+    </script>
   </body>
 </html>
